@@ -136,24 +136,58 @@ color: #000000 !important;
 <header class="glass-effect fixed w-full top-0 z-50 border-b border-gold">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16 lg:h-20">
+
+      <!-- Logo + Brand -->
       <div class="flex items-center space-x-3">
         <div class="w-10 h-10 lg:w-12 lg:h-12 gradient-gold rounded-xl flex items-center justify-center gold-glow overflow-hidden animate-pulse">
           <img src="logo.jpg" alt="Logo" class="w-full h-full object-contain rounded-xl">
         </div>
-</div>
-<div class="flex flex-col">
-<span class="text-lg lg:text-xl font-bold text-gold font-playfair">Klinik Pro Riset</span>
-<span class="text-xs text-gray-400 hidden sm:block">World-Class Research Excellence</span>
-</div>
-</div>
+        <div class="flex flex-col">
+          <span class="text-lg lg:text-xl font-bold text-gold font-playfair">Klinik Pro Riset</span>
+          <span class="text-xs text-gray-400 hidden sm:block">World-Class Research Excellence</span>
+        </div>
+      </div>
 
-<!-- Desktop Navigation -->
-<nav class="hidden lg:flex space-x-8">
-<a href="#tentang" class="text-gray-300 hover:text-gold transition-all duration-300 font-medium">Tentang</a>
-<a href="#materi" class="text-gray-300 hover:text-gold transition-all duration-300 font-medium">Materi</a>
-<a href="#jadwal" class="text-gray-300 hover:text-gold transition-all duration-300 font-medium">Jadwal</a>
-<a href="#investasi" class="text-gray-300 hover:text-gold transition-all duration-300 font-medium">Investasi</a>
-</nav>
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex space-x-8">
+        <a href="#tentang" class="text-gray-300 hover:text-gold transition-all duration-300 font-medium">Tentang</a>
+        <a href="#materi" class="text-gray-300 hover:text-gold transition-all duration-300 font-medium">Materi</a>
+        <a href="#jadwal" class="text-gray-300 hover:text-gold transition-all duration-300 font-medium">Jadwal</a>
+        <a href="#investasi" class="text-gray-300 hover:text-gold transition-all duration-300 font-medium">Investasi</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="lg:hidden">
+        <button id="mobile-menu-button" class="text-gray-300 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden mt-2 space-y-2">
+      <a href="#tentang" class="block text-gray-300 hover:text-gold font-medium">Tentang</a>
+      <a href="#materi" class="block text-gray-300 hover:text-gold font-medium">Materi</a>
+      <a href="#jadwal" class="block text-gray-300 hover:text-gold font-medium">Jadwal</a>
+      <a href="#investasi" class="block text-gray-300 hover:text-gold font-medium">Investasi</a>
+    </div>
+
+  </div>
+</header>
+
+<!-- Script untuk toggle mobile menu -->
+<script>
+  const btn = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
 
 <!-- Mobile Menu Button -->
 <button id="mobile-menu-btn" class="lg:hidden text-gold">
@@ -285,7 +319,7 @@ Kenapa Harus Ikut Program Kelas Dunia Ini?
 <span class="text-2xl lg:text-3xl text-black font-bold">🎁</span>
 </div>
 <h3 class="text-xl lg:text-2xl font-bold text-gold mb-4 font-playfair">Bonus Premium</h3>
-<p class="text-white leading-relaxed">E-sertifikat internasional, rekaman eksklusif, materi lengkap, & surat undangan resmi</p>
+<p class="text-white leading-relaxed">E-sertifikat 4 JP, rekaman eksklusif, materi lengkap, & surat undangan resmi</p>
 </div>
 </div>
 </div>
@@ -560,6 +594,7 @@ observer.observe(card);
 </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97cad93e924ecde6',t:'MTc1NzQ2NDU2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
 
